@@ -1,0 +1,16 @@
+<template name="chapterNav">
+  <div class="chapter-nav" role="navigation">
+    {{#each workContents}}
+      <ul class="books-list list-group-horizontal" data-id="{{book_id}}">
+        <li class="{{maybeActiveBook}} list-group-item">{{toRoman @index}}</li>
+      </ul>
+      <ul class="chapters-list list-group-horizontal">
+        {{#each chapters}}
+          <li data-id="{{chapter_id}}" class="{{maybeActiveChapter}} list-group-item">
+            <a href="{{pathFor 'chapter.show'}}" >{{toArabic @index}}</a>
+          </li>
+        {{/each}}
+      </ul>
+    {{/each}}
+  </div>
+</template>

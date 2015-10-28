@@ -1,0 +1,11 @@
+<template name="chapterViewLayout">
+  <div class="container-fluid">
+    <header>
+      {{> nav }}
+    </header>
+    {{> chapterNav }}
+    <div class="main">
+      {{> yield}}
+    </div>
+  </div>
+</template>

@@ -1,0 +1,72 @@
+<template name="chapter">
+  <!--<h1>Show Chapter:</h1>-->
+  {{#each contents}}
+    {{#each chapters}}
+      {{#if isCurrentChapter chapter_id}}
+        <div class="right clearfix">
+          <button type="button" class="btn clear" disabled>Clear Selection</button>
+        </div>
+        <div id="{{chapter_id}}" class="{{chapterClasses}}" data-title="{{title}}">
+          <!--<div class="title">Title: {{title}}</div>-->
+          <div class="row">
+            <div class="content col-xs-6">
+              {{{chapterContent}}}
+              <div class="targetAlignment">Selection:
+                <i>
+                {{#if hasTarget}}
+                  {{sourceTarget}}
+                {{else}}
+                  none
+                {{/if}}
+                </i>
+              </div>
+            </div>
+            <div class="translations col-xs-6">
+              {{> translationList translation=translation target=targetAlignment }}
+            </div>
+          </div>
+        </div>
+        {{#if hasTarget }}
+          <div class="notes container-fluid">
+            <h3>Notes</h3>
+            {{#if notes.count }}
+              {{#each notes }}
+                {{> note}}
+              {{/each}}
+            {{else}}
+                <p>0 notes found</p>
+            {{/if}}
+          </div>
+        {{/if}}
+      {{/if}}
+    {{/each}}
+  {{/each}}
+</template>
+
+<template name="translationList">
+  {{#with translation}}
+  <h3>Translation <span class="lang-label">[{{lang}}]</span>
+    </h3>
+  <div class="translation" lang="{{lang}}">
+      {{{translationContent}}}
+    </div>
+  {{/with}}
+  <div class="targetAlignment">Target:
+    <i>
+    {{#if targetValue}}
+      {{targetValue}}
+    {{else}}
+      none
+    {{/if}}
+    </i>
+  </div>
+</template>
+
+<template name="note">
+  <div class="tei-note">
+    <div class="tei-label">{{{label}}}</div>
+    <div class="note-body">
+      {{{body}}}
+    </div>
+  </div>
+</template>

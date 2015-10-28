@@ -1,0 +1,1894 @@
+[34m[1m
+Meteor Up: Production Quality Meteor Deployments[22m[39m
+[34m[1m------------------------------------------------
+[22m[39m
+[alf.hum.ku.dk] startup:: adding fixture data...
+fixture data:  { work_id: 'Anon.Chron.Lethr_original.xml',
+  lang: 'la',
+  title: 'Chronicon Lethrense',
+  author: 'Annon',
+  contents: [ { book_id: 'Anon.Chron.Lethr_original.xml', chapters: [Object] } ] }
+fixture data:  { work_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  lang: 'da',
+  title: 'Chronicon Lethrense',
+  author: 'Tue Søvsø',
+  contents: 
+   [ { book_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+       chapters: [Object] } ] }
+data added:  hLNXN4dw3sQwu4zvx
+data added:  G4Hrf2d7po7d2ChCe
+ >> stepping down to gid: meteoruser
+ >> stepping down to uid: meteoruser
+startup:: adding alignments for group Anon.Chron.Lethrv1_align-linkGrp-s-la-da (28) for work  Anon.Chron.Lethr_trans_Sovso.xml
+fixture data:  { alignment_id: 'Lethr_l_s.1',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.2',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.2' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.3',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.4',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.5',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.6',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.9',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.10',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.2', 'Lethr_trans_t1.2.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.11',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.12',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.13',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.14',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.7' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.15',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.7' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.8' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.16',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.8' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.9' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.17',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.9' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.10' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.18',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.10' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.11' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.19',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.11' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.12' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.20',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.12' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.13' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.21',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.22',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.2' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.23',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.24',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.25',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.26',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.27',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.7' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.7' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.28',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.8' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.8' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.29',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.9' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.9' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.30',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.10' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.10' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+data added:  8Wg4o4mAdsTeWMwkw
+data added:  vXNeKz2rxRxCLXa6d
+data added:  FDFzdEsDgozgsnYDR
+data added:  bgom8ycCGwCB7u9FY
+data added:  FaqCchrtpfqtBxAfR
+data added:  F2W9ZHXYpeDd67eQb
+startup:: adding alignments for group Anon.Chron.Lethrv1_align-linkGrp-s-la-da (28) for work  Anon.Chron.Lethr_trans_Sovso.xml
+fixture data:  { alignment_id: 'Lethr_l_s.1',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.2',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.2' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.3',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.4',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.5',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.6',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.9',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.10',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.2', 'Lethr_trans_t1.2.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.11',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.12',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.13',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.14',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.7' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.15',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.7' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.8' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.16',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.8' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.9' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.17',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.9' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.10' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.18',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.10' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.11' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.19',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.11' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.12' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.20',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translati[alf.hum.ku.dk] on_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.12' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.13' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.21',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.22',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.2' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.23',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.24',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.25',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.26',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.27',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.7' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.7' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.28',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.8' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.8' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.29',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.9' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.9' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.30',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.10' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.10' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+data added:  vJRDtoks2xicGyP8t
+data added:  svbuuW3D2f6GZfAS2
+data added:  zXpBC35qHFTThqcAm
+data added:  onJjd2JPk2qh3ye9y
+data added:  5K8wbpdYfbq6zmTa4
+data added:  ZvHc4tsAi3CdwnZSy
+data added:  kFtuQ4sPcyMAx7orA
+data added:  H6qbcZKrrMeSJpRbo
+data added:  5Mmyzip2wr75WvTPk
+data added:  j6LaEXwcphFw2xjps
+data added:  bPwktEoLGavtrv4hd
+data added:  eCG2wfxan5igcpDHh
+data added:  xPTj4PsjesXDagXsg
+data added:  MEWfam4Luocv5vmyn
+data added:  Mn5Ku5pEv9aESNsdP
+data added:  KaeFEJEXasCKt4czE
+data added:  vAFoLLCjdESibj6um
+data added:  rsrq7jGrzCsSjXTq8
+data added:  dTxQFtC2DfKj5Zn8W
+data added:  xrpLD6pFanvsYqC6e
+data added:  rNtMZjmfKaoGf6wXr
+data added:  5iWgr6JNuKrvdqR7E
+data added:  DEcMfamcPv83AMR9N
+data added:  cP4JcFyWiKxKWsfve
+data added:  EcAQnKXTCS5DLQNtf
+data added:  aop7kmqkDwrATThWv
+data added:  wynjAsBhqf4DKimWY
+data added:  bcdzPxfL79pNz7tMp
+data added:  bPHFDY3zJ2ZsTwnaw
+data added:  ZeJwvo7d4vHGhDLMp
+data added:  2c8cBp6DnqxMG2aNb
+data added:  PP3eT7pkMSAs6p958
+data added:  RdMKZ4gZvizhkHj2N
+data added:  XPBsrb7633Fg3R5un
+data added:  jAyBWvTH4D4gZ868G
+data added:  ohyrB8CpvKuTbyn5m
+data added:  sL8pKmu3PiX2Qszp3
+data added:  fRg2Zn8djyu545cad
+data added:  ePEdEsS9QzddYMyJp
+data added:  vcHxeJo2HTHZFtCaX
+data added:  iTo4k8fdhN4mc4xHH
+data added:  8sgNrzRPyvvxkHHqx
+data added:  TTxZnf9bRj4FutTET
+data added:  mxWHg7apjBLbg8Qgb
+data added:  nkFxDSd4iQa7QkKmc
+data added:  9CY87AYdyS6yZmrr7
+data added:  AkXThkfFre2gkBEQn
+data added:  WghGnA4RCvP4A8qb2
+data added:  HvpJhqBisjFBuiAjm
+data added:  EJwwTD5WtzaLRD2EF
+ >> stepping down to gid: meteoruser
+ >> stepping down to uid: meteoruser
+startup:: adding fixture data...
+fixture data:  { work_id: 'Anon.Chron.Lethr_original.xml',
+  lang: 'la',
+  title: 'Chronicon Lethrense',
+  author: 'Annon',
+  contents: [ { book_id: 'Anon.Chron.Lethr_original.xml', chapters: [Object] } ] }
+fixture data:  { work_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  lang: 'da',
+  title: 'Chronicon Lethrense',
+  author: 'Tue Søvsø',
+  contents: 
+   [ { book_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+       chapters: [Object] } ] }
+data added:  7ZiJiGkRPeniMN42C
+data added:  nMQATNfQ9dSkmdCum
+ >> stepping down to gid: meteoruser
+ >> stepping down to uid: meteoruser
+notes: null
+notes: null
+startup:: adding alignments for group Anon.Chron.Lethrv1_align-linkGrp-s-la-da (28) for work  Anon.Chron.Lethr_trans_Sovso.xml
+fixture data:  { alignment_id: 'Lethr_l_s.1',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.2',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.2' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.3',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.4',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.5',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.6',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.9',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.10',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.2', 'Lethr_trans_t1.2.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.11',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.12',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.13',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.14',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.7' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.15',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.7' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.8' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.16',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.8' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.9' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.17',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.9' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.10' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.18',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.10' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.11' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.19',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.11' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.12' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.20',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.12' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.13' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.21',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.22',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.2' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.23',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.24',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.25',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.26',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.27',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.7' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.7' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.28',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.8' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.8' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.29',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.9' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.9' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.30',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.10' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.10' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+data added:  s9TWx6i8mmNEc29PK
+data added:  9vARQqS2Mmig8R4T7
+data added:  y3RBJ9Qef4YJ5idKL
+data added:  ranpXehSuKitnLwFe
+data added:  9tjrzz33SBidxwKrw
+data added:  bqSnzh5qygQH2SZjp
+startup:: adding alignments for group Anon.Chron.Lethrv1_align-linkGrp-s-la-da (28) for work  Anon.Chron.Lethr_trans_Sovso.xml
+fixture data:  { alignment_id: 'Lethr_l_s.1',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.2',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.2' ],
+  xtargets_target: [ 'Le[alf.hum.ku.dk] thr_trans_t1.1.2' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.3',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.4',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.5',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.6',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.9',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.10',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.2', 'Lethr_trans_t1.2.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.11',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.12',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.13',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.14',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.7' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.15',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.7' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.8' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.16',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.8' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.9' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.17',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.9' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.10' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.18',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.10' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.11' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.19',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.11' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.12' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.20',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.12' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.13' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.21',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.22',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.2' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.23',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.24',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.25',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.26',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.27',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.7' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.7' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.28',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.8' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.8' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.29',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.9' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.9' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.30',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.10' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.10' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+data added:  nYaTAB2nmp7npTMzk
+data added:  zriqojRAqgNXcFhdx
+data added:  5FZpNYwxoHZxu6zqe
+data added:  g7B9xPraeYXE7HiRS
+data added:  8fgQzoCkbma52Xgkg
+data added:  jBHo8bGdFLGQdxETq
+data added:  4n9ZLHTNJzsdcN2eX
+data added:  PrMTkwDQNRtuRgr6J
+data added:  WQQECjrbtPPng8Yka
+data added:  TMpsrZpZYo5YWhkEt
+data added:  K5ey2ztJhaDhStEe3
+data added:  c3GXivYYTAsYKh9aE
+data added:  XHJqHCiRRZf87yu8h
+data added:  aex3DuNsNo7uccRdt
+data added:  LtsB2Q7QAdR3BZ39y
+data added:  mGuSNRAoQDHzEK5ic
+data added:  BxYGRshirhEY7HBEL
+data added:  KwvjY37icWJeBTqH9
+data added:  pvjX32icYdiuq2Qvc
+data added:  aavvu7BtKnboZ9xQ5
+data added:  hFNHqWWnQe8Pess8f
+data added:  WDB6C9qNZGHjrbr7m
+data added:  PYBzdKfKQfd4qCmzp
+data added:  uKXJhCvMaHmm6eFyC
+data added:  sjbQLBQ77NysJr6qZ
+data added:  MJQC83KYgcbJ5M7WC
+data added:  vNpZRCEz3bkAvLY6J
+data added:  6HucHnSNBaXW2Wdsk
+data added:  6je2Gd6i3vECqajgb
+data added:  R4QZKCYhCMpGwZ8Bq
+data added:  PMdkoW4NHhdf2Gfee
+data added:  7LgXCfcTvSYyDctCw
+data added:  epFsayQrptm9u7Jfp
+data added:  h67LznLc9XDWCSZZF
+data added:  ehLAkpGYpZ9sn7RrR
+data added:  J2jYHCbqg7JR7Hihg
+data added:  9SFgsDp2Gi3pLgvRQ
+data added:  nmQSvYLHYbwYSWhHC
+data added:  ryejEGwPE35XTZqG2
+data added:  MM99kWZcMkrYnKZab
+data added:  SAp8JB9kEMfQWjp9g
+data added:  M2gRzjxZo3C83veHv
+data added:  98FGhZjaJdMZvDAXw
+data added:  9CrobxR4hrZztgpTE
+data added:  YC2tLZDSHrGCY35oY
+data added:  RohQcqpAZZ8PYB2af
+data added:  Y9ScicGsgY6Mx5GHn
+data added:  2kYXY3XaYAm7W4g98
+data added:  x64wrP93XjKrxSZAC
+data added:  4ZBkzqy3oBYt5cpy8
+ >> stepping down to gid: meteoruser
+ >> stepping down to uid: meteoruser
+startup:: adding fixture data...
+fixture data:  { work_id: 'Anon.Chron.Lethr_original.xml',
+  lang: 'la',
+  title: 'Chronicon Lethrense',
+  author: 'Annon',
+  contents: [ { book_id: 'Anon.Chron.Lethr_original.xml', chapters: [Object] } ] }
+fixture data:  { work_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  lang: 'da',
+  title: 'Chronicon Lethrense',
+  author: 'Tue Søvsø',
+  contents: 
+   [ { book_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+       chapters: [Object] } ] }
+data added:  DiQKtmjYtzWFBY8pn
+restpath: http://alf.hum.ku.dk:8080/exist/restxq/tue
+workId: Anon.Chron.Lethr_trans_Sovso.xml
+data added:  K4yxsopo8XTuMwuKC
+restpath: http://alf.hum.ku.dk:8080/exist/restxq/tue
+workId: Anon.Chron.Lethr_trans_Sovso.xml
+ >> stepping down to gid: meteoruser
+ >> stepping down to uid: meteoruser
+notes: null
+notes: null
+alignments: [object Object]
+alignments: [object Object]
+startup:: adding alignments for group Anon.Chron.Lethrv1_align-linkGrp-s-la-da (28) for work  Anon.Chron.Lethr_trans_Sovso.xml
+fixture data:  { alignment_id: 'Lethr_l_s.1',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.2',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.2' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.3',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.4',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.5',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.6',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.9',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.10',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.2', 'Lethr_trans_t1.2.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.11',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.12',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.13',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.14',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.7' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.15',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.7' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.8' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.16',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.8' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.9' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: '[alf.hum.ku.dk] Lethr_l_s.17',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.9' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.10' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.18',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.10' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.11' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.19',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.11' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.12' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.20',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.12' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.13' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.21',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.22',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.2' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.23',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.24',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.25',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.26',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.27',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.7' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.7' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.28',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.8' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.8' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.29',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.9' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.9' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.30',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.10' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.10' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+data added:  sQxX2HSihxquTCEv7
+data added:  DZjKKPQCAhCrkZSdt
+data added:  MmfjXbTrDPqjYkRdW
+data added:  F85Modcjjx3588uhw
+data added:  zkbpo9azo4JwxPWEx
+data added:  X9k8h2JL6tdgS4XJy
+startup:: adding alignments for group Anon.Chron.Lethrv1_align-linkGrp-s-la-da (28) for work  Anon.Chron.Lethr_trans_Sovso.xml
+fixture data:  { alignment_id: 'Lethr_l_s.1',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.2',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.2' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.3',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.4',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.5',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.6',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.9',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.10',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.2', 'Lethr_trans_t1.2.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.11',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.12',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.13',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.14',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.7' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.15',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.7' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.8' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.16',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.8' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.9' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.17',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.9' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.10' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.18',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.10' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.11' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.19',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.11' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.12' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.20',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.12' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.13' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.21',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.22',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.2' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.23',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.24',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.25',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.26',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.27',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.7' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.7' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.28',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.8' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.8' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.29',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.9' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.9' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.30',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.10' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.10' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+data added:  eYGf5wbwdKHHJ7S9w
+data added:  LxEAbh8xEJcG5Lpfj
+data added:  i363PnBMX2tgehAFR
+data added:  ZvFM5knufciWXWCao
+data added:  kfiqNi2j5ouMd6DxE
+data added:  Ahia6Nf3BHe5Y9ECP
+data added:  adRjBavvZ32sQxY95
+data added:  JZveoNpF5MFSgWgRu
+data added:  5sCgYurkw8WKxJ8mS
+data added:  TkMwJ3mAAE9zLFyG4
+data added:  puzBzruLuRoKZzfNq
+data added:  8LbMezNoFxPnwiNgv
+data added:  M6iqihy3enjmgDx6j
+data added:  aj7Ro5qkmvDnXpS2G
+data added:  vBzYpn23fjSGrhJzf
+data added:  KKQ3FZKag3C9P8Jaw
+data added:  GMFmMk8aP5Ad3QWiK
+data added:  nvNFzfThBmgmG6tRp
+data added:  JZEQdHyGrp8dNBwp9
+data added:  dFre3frYJDxnBnNSc
+data added:  B5bfegjnPHav5oa4f
+data added:  k2jE22JXDeNSjMAGc
+data added:  Ls4BAxcZE8qFjHc4q
+data added:  AABHjPn5CK3TSesHn
+data added:  kZD2wbiyd7jP5rEDo
+data added:  Jbb7dYWC7bT92mywk
+data added:  AJWpHiNm7chQ7gqxb
+data added:  2vEzcJb8ZhzbopqK7
+data added:  HHQe28bXbcMP5r7Zk
+data added:  t3LocXJ8g7e4Hrrpc
+data added:  5memNm4D5CEiMtFyJ
+data added:  kanPMuZGywX8XyuxJ
+data added:  Y7yNLCK58zBqtq6fJ
+data added:  cob6PftyQKhJMzwzL
+data added:  Xt5TyBYitPpjfhJv4
+data added:  fR3ypoMN2hcMPEp7M
+data added:  6gvAGC9tKurPoEN7M
+data added:  AHyfwkW8HTsnhtWeZ
+data added:  9TcDWRtRdijRMXKJq
+data added:  C9PbsrfnHNqox9pfh
+data added:  4wbB2NJfTAgcTxwC2
+data added:  K6ryKn76wsd7JhHzd
+data added:  4jLQnMxiHfWoLGXhA
+data added:  uyLWJovoaqieHvEHn
+data added:  L4DcNmM23D3GEAK2H
+data added:  JcgqAdXTGDYSEwvKh
+data added:  Hody3ftBgZNkhc9x2
+data added:  zQAKoBXXYNcJ2fQ32
+data added:  XidggEvod4skqEHoS
+data added:  TrNuTbq5vHFxodzTT
+startup:: adding fixture data...
+fixture data:  { work_id: 'Anon.Chron.Lethr_original.xml',
+  lang: 'la',
+  title: 'Chronicon Lethrense',
+  author: 'Annon',
+  contents: [ { book_id: 'Anon.Chron.Lethr_original.xml', chapters: [Object] } ] }
+fixture data:  { work_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+[alf.hum.ku.dk]   lang: 'da',
+  title: 'Chronicon Lethrense',
+  author: 'Tue Søvsø',
+  contents: 
+   [ { book_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+       chapters: [Object] } ] }
+data added:  MGWvg66pXn63cnEKk
+restpath: http://alf.hum.ku.dk:8080/exist/restxq/tue
+workId: Anon.Chron.Lethr_trans_Sovso.xml
+data added:  xNYz5pLLmLXK3KFHP
+restpath: http://alf.hum.ku.dk:8080/exist/restxq/tue
+workId: Anon.Chron.Lethr_trans_Sovso.xml
+ >> stepping down to gid: meteoruser
+ >> stepping down to uid: meteoruser
+notes: null
+notes: null
+alignments: [object Object]
+alignments: [object Object]
+startup:: adding alignments for group Anon.Chron.Lethrv1_align-linkGrp-s-la-da (28) for work  Anon.Chron.Lethr_trans_Sovso.xml
+fixture data:  { alignment_id: 'Lethr_l_s.1',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.2',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.2' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.3',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.4',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.5',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.6',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.9',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.10',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.2', 'Lethr_trans_t1.2.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.11',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.12',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.13',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.14',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.7' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.15',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.7' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.8' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.16',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.8' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.9' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.17',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.9' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.10' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.18',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.10' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.11' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.19',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.11' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.12' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.20',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.12' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.13' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.21',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.22',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.2' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.23',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.24',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.25',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.26',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.27',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.7' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.7' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.28',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.8' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.8' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.29',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.9' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.9' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.30',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.10' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.10' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+data added:  pYH3EjNkyN6NaLhaS
+data added:  4DmjzHmPXX3fZWv7Y
+data added:  MCpzopo9BwCTqZMNu
+data added:  MJAescBxtDJQz4Z6s
+data added:  sH8e2aZpm4tev2iuc
+data added:  LvQeb8vwenHw9hfwY
+startup:: adding alignments for group Anon.Chron.Lethrv1_align-linkGrp-s-la-da (28) for work  Anon.Chron.Lethr_trans_Sovso.xml
+fixture data:  { alignment_id: 'Lethr_l_s.1',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.2',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.2' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.3',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.4',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.5',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.6',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.1.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.1.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.9',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.10',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.2', 'Lethr_trans_t1.2.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.11',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.12',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.13',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.14',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.7' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.15',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.7' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.8' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.16',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.8' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.9' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.17',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.9' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.10' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.18',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.10' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.11' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.19',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.2.11' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.12' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.20',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_So[alf.hum.ku.dk] vso.xml',
+  xtargets_source: [ 'Lethr.2.12' ],
+  xtargets_target: [ 'Lethr_trans_t1.2.13' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.21',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.1' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.1' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.22',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.2' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.2' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.23',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.3' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.3' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.24',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.4' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.4' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.25',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.5' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.5' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.26',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.6' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.6' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.27',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.7' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.7' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.28',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.8' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.8' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.29',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.9' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.9' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+fixture data:  { alignment_id: 'Lethr_l_s.30',
+  work_id: 'Anon.Chron.Lethr_original.xml',
+  translation_id: 'Anon.Chron.Lethr_trans_Sovso.xml',
+  xtargets_source: [ 'Lethr.3.10' ],
+  xtargets_target: [ 'Lethr_trans_t1.3.10' ],
+  group_id: 'Anon.Chron.Lethrv1_align-linkGrp-s-la-da',
+  translation: { source: 'la', target: 'da' } }
+data added:  hN9P2vSozgDdxXGPa
+data added:  AwTEi8SAx9F446hhu
+data added:  x4qD5YR4yaKtmMuxy
+data added:  QzbeHh3LjZTL4u7jk
+data added:  CFjAdgXhhCchKYDcN
+data added:  PCKCQ2ood3satL6aA
+data added:  yGNSSWdnuK4CJPLW6
+data added:  n7C5fiuLznXC99bkr
+data added:  nhs5SCWEHhJQNGG7n
+data added:  uTpuahpck4CBSSF7f
+data added:  md3SZnYWyBysfxrL3
+data added:  nnm9whX6fQTtmfX4K
+data added:  3uvW4KkkPXyMAKsP5
+data added:  QMRJfZXsBjWMRDv36
+data added:  t2X4uFyCJE2PxHCTp
+data added:  3aYsunjcrCtgqY3ar
+data added:  xM33Nb8rK5ouSoufx
+data added:  KgzAvm976GSX2BbGx
+data added:  xqsWaXmT7yfapeZnv
+data added:  4aRcE75wgDsbogTnH
+data added:  nW3zmya9XvudN3vyK
+data added:  2DgGfGFiSDJ2EtF3H
+data added:  Xee7CpJ4cCdSGPfm5
+data added:  seHzTChYvGYrLHoTh
+data added:  2W8DHoWdZtgNFs8hk
+data added:  qMijTejNuEgDNAP4c
+data added:  seAHumJwHoWmzPLBo
+data added:  JRDPtY2pGzvpQSGNT
+data added:  xy2b2Asfwr3LPiss6
+data added:  aLKz4DjTEKfzpizEz
+data added:  wgHoCf7pbRZA8Ft8f
+data added:  xoS4YRD2Mt23BCKo4
+data added:  9PdGuzhWb6M2CTLT8
+data added:  bBJjwccHCMFyypvCQ
+data added:  cvsN2vt9JTvDo9mc9
+data added:  wpz2wQG6ARLFFfHfH
+data added:  nWh2dLbamFEHB8EbB
+data added:  hrDTgLZ2PdpeTScfo
+data added:  wSZxxXwkCdGAYSLPR
+data added:  5tJHB6utDp3QfzSPX
+data added:  qgkLTaCPZh7bahpqg
+data added:  A45uL3qyeGsJcthCA
+data added:  htL2JXdog5rC5CmNJ
+data added:  xgHyTBCT6YDAmHL4E
+data added:  mMozSvzNPfhkmvHuT
+data added:  PT4fNWBMqnW7ncbKM
+data added:  A6tomqHocSdDuWxDb
+data added:  t8cWSiBWeKLgbsRuN
+data added:  R9osjwkHne3YpxPwb
+data added:  dDuDLRaRBTeq73MFn

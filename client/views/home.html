@@ -1,0 +1,43 @@
+<template name="home">
+  <div class="outline">
+    <!--<p>List of Latin works:</p>-->
+    <ul class="works">
+      {{#each works}}
+        {{> work_listing}}
+      {{/each}}
+    </ul>
+  </div>
+</template>
+
+<template name="translationsList">
+  <!--<p>List of Latin translations (Danish):</p>-->
+  <ul class="translations">
+    {{#each works}}
+      {{> work_listing}}
+    {{/each}}
+  </ul>
+</template>
+
+<template name="work_listing">
+  <li>{{title}} <i>{{author}}</i>
+    <ul>
+      {{#each contents}}
+        {{> book_listing}}
+      {{/each}}
+    </ul>
+  </li>
+</template>
+
+<template name="book_listing">
+  <li>{{book_id}}
+    <ul>
+      {{#each chapters}}
+        <li>
+          <a href="{{pathFor route='chapter.show' class='chapterLink'}}">
+            <span>{{title}}</span>
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+  </li>
+</template>
