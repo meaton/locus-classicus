@@ -1,6 +1,17 @@
 function jq(myid) {
   return "#" + myid.replace( /(:|\.|\[|\]|,)/g, "\\$1" );
-}
+};
+
+function resetState(template) {
+  //reset UI state
+  template.$('div.content span.selected').removeClass('selected');
+  template.$('div.content span.focus').removeClass('focus');
+  template.$('button.clear').attr('disabled', 'disabled');
+
+  //reset reactive vars
+  template.currentTargetId.set(null);
+  template.currentAlignment.set(null);
+};
 
 Template.chapter.onCreated(function() {
   var instance = this;
@@ -77,6 +88,12 @@ Template.chapter.helpers({
     if(Template.instance().currentTargetId && Template.instance().currentTargetId.get() != null)
       return Alignments.findOne({ work_id: Session.get('currentWorkId'), xtargets_source: Template.instance().currentTargetId.get() })
     return null;
+  },
+  overlayDisplay: function() {
+    if(Template.instance().currentTargetId && Template.instance().currentTargetId.get() != null)
+      return {'style': 'display:block' };
+    else
+      return {'style': 'display:none' };
   }
 });
 
@@ -85,22 +102,26 @@ Template.chapter.events({
     event.stopPropagation();
     console.log('clear selection: ' + template.currentTargetId.get());
 
-    //reset UI state
-    template.$('div.content span.selected').removeClass('selected');
-    template.$('div.content span.focus').removeClass('focus');
-    template.$('button.clear').attr('disabled', 'disabled');
-
-    //reset reactive vars
-    template.currentTargetId.set(null);
-    template.currentAlignment.set(null);
+    resetState(template);
   },
   "click .tei-p": function(event, template){
     console.log('clicked paragraph: ', event.currentTarget.id);
   },
   "click .tei-s": function(event, template){
     console.log('clicked sentence: ', event.currentTarget.id);
+
     var alignment = null, prevAlignment = null;
     var targetId = event.currentTarget.id;
+
+    if(template.currentTargetId && targetId == template.currentTargetId.get()) {
+      event.stopPropagation();
+      return;
+    }
+    else if(template.currentAlignment.get() != null && _.indexOf(template.currentAlignment.get().xtargets_target, targetId) > -1) {
+      event.stopPropagation();
+      return;
+    }
+    else if(template.$('.overlay').is(':visible')) return;
 
     if(targetId.indexOf('trans_') > 0) {
       console.log('find alignment for selected target: ' + targetId);
@@ -146,6 +167,16 @@ Template.chapter.events({
 
     template.$('button.clear').attr('disabled', null);
   },
+  "click .overlay": function(event, template) {
+    console.log('overlay clicked: ' + event.currentTarget);
+    event.stopPropagation();
+    resetState(template);
+  },
+  "click .chapter.highlight": function(event, template) {
+    event.stopPropagation();
+    console.log('click target: ' + event.target.id);
+    if(event.target.id != template.currentTargetId.get()) resetState(template);
+  }
 });
 
 Template.translationList.onCreated(function() {

@@ -1,50 +1,73 @@
 /* CSS declarations go here */
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 /* list-group-horizontal: gist:d6401c926b4fb2442e15 */
 .list-group-horizontal .list-group-item {
 	display: inline-block;
   cursor: pointer;
 }
+
 .list-group-horizontal .list-group-item {
 	margin-bottom: 0;
 	margin-left:-4px;
 	margin-right: 0;
 }
+
 .list-group-horizontal .list-group-item:only-child {
   border-bottom-left-radius: 4px !important;
 }
+
 .list-group-horizontal .list-group-item:first-child {
 	border-top-right-radius:0;
 	border-bottom-left-radius:4px;
 }
+
 .list-group-horizontal .list-group-item:last-child {
 	border-top-right-radius:4px;
 	border-bottom-left-radius:0;
 }
+
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
   background-color: #eee;
   border-color: #ddd;
 }
+
 .books-list.list-group-horizontal li, .books-list.list-group-horizontal li.active {
   color: #337ab7;
   text-decoration: none;
 }
 
 button.clear {
+	display: none;
   float:right;
 }
 button.clear[disabled] {
   opacity: 0.66;
 }
 
-div.chapter-nav li.active {
-  text-decoration: underline;
-}
-
 div.notes {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	overflow: auto;
+	height: 300px;
+	width: calc(100% - 30px);
 	background-color: #fff;
-	border: 1px #eee solid;
-	border-radius: 12px;
-	margin: 20px auto;
+	border: 2px solid #777;
+	border-radius: 8px;
+	box-shadow: 3px 3px 1px black;
+	margin: 15px 15px;
+	z-index: 12;
 }
 
 h3 > span.lang-label {
@@ -61,19 +84,47 @@ h3 > span.lang-label {
 }
 
 .tei-s.selected {
-  opacity: 0.99 !important;
+	display: inline-block;
+	margin: 15px;
+	padding: 2px 4px;
+	opacity: 0.99 !important;
   font-size: 1.2em;
+	background-color: #fff;
+	border: 1px solid #777;
+	border-radius: 3px;
+	box-shadow: 2px 2px 0.5px #000;
+	cursor: auto;
 }
 
 .tei-s.focus {
-  background-color: #eee;
+  background-color: #fff;
 }
 
-.chapter.highlight .content p.tei-p .tei-s, .chapter.highlight .translation p.tei-p .tei-s {
+div.chapter {
+	position: absolute;
+	width: calc(100% - 30px);
+	z-index: 11;
+}
+
+div.chapter-nav li.active {
+  text-decoration: underline;
+}
+
+div.chapter:not(.highlight) {
+	opacity: 1;
+	z-index: 0;
+}
+
+div.chapter.highlight {
+	cursor: pointer;
+}
+
+div.chapter.highlight .content p.tei-p .tei-s, .chapter.highlight .translation p.tei-p .tei-s {
   opacity: 0.33;
+	z-index: 12;
 }
 
-.content .tei-s:hover, .translation .tei-s:hover {
+div.chapter:not(.highlight) .content .tei-s:hover, div.chapter:not(.highlight) .translation .tei-s:hover {
   text-decoration: underline;
   background-color: yellow;
   cursor: pointer;
