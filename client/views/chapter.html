@@ -8,10 +8,12 @@
           <button type="button" class="btn clear" disabled>Clear Selection</button>
         </div>
         <div id="{{chapter_id}}" class="{{chapterClasses}}" data-title="{{title}}">
-          <!--<div class="title">Title: {{title}}</div>-->
           <div class="row">
             <div class="content col-xs-6">
-              {{{chapterContent}}}
+              <h2 class="chapter-title">{{title}}</h2>
+              <div class="{{targetClass}}">
+                {{{chapterContent}}}
+              </div>
               <div class="targetAlignment">Selection:
                 <i>
                 {{#if hasTarget}}
@@ -23,7 +25,7 @@
               </div>
             </div>
             <div class="translations col-xs-6">
-              {{> translationList translation=translation target=targetAlignment }}
+                {{> translationList translation=translation target=targetAlignment }}
             </div>
           </div>
         </div>
@@ -46,12 +48,15 @@
 
 <template name="translationList">
   {{#with translation}}
-  <h3>Translation <span class="lang-label">[{{lang}}]</span>
-    </h3>
-  <div class="translation" lang="{{lang}}">
-      {{{translationContent}}}
-    </div>
+    <h3>Translation <span class="lang-label">[{{lang}}]</span></h3>
   {{/with}}
+  <div class="{{#if targetValue }}targeted{{/if}}">
+    {{#with translation}}
+      <div class="translation" lang="{{lang}}">
+        {{{translationContent}}}
+      </div>
+    {{/with}}
+  </div>
   <div class="targetAlignment">Target:
     <i>
     {{#if targetValue}}

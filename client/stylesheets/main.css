@@ -1,5 +1,24 @@
 /* CSS declarations go here */
 
+html, body {
+	overflow: hidden;
+}
+
+.tei-head {
+	display: none;
+}
+
+.content .targeted, .translations .targeted {
+	overflow: hidden;
+	min-height: 300px;
+}
+
+.content .targeted .tei-div, .translations .targeted .tei-div {
+	position: relative;
+	top: 0;
+	bottom: 0;
+}
+
 .overlay {
 	position: fixed;
 	top: 0;
@@ -92,7 +111,12 @@ h3 > span.lang-label {
 	background-color: #fff;
 	border: 1px solid #777;
 	border-radius: 3px;
-	box-shadow: 2px 2px 0.5px #000;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-shadow: 2px 2px 0.5px rgba(0, 0, 0, 1);
+	-webkit-box-shadow: 2px 2px 0.5px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 2px 2px 0.5px rgba(0, 0, 0, 1);
+	overflow: hidden;
 	cursor: auto;
 }
 
@@ -160,5 +184,5 @@ ul.works {
 }
 
 .translation {
-  margin: 15px 0px;
+  margin: auto 0px;
 }

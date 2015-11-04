@@ -2,6 +2,12 @@ function jq(myid) {
   return "#" + myid.replace( /(:|\.|\[|\]|,)/g, "\\$1" );
 };
 
+function offsetContent(div) {
+  var pos = $(div).find('.tei-s.selected').position();
+  if(pos != undefined && pos.top > 200)
+    $(div).css({ top: - pos.top + 115, left: pos.left });
+};
+
 function resetState(template) {
   //reset UI state
   template.$('div.content span.selected').removeClass('selected');
@@ -23,8 +29,16 @@ Template.chapter.onCreated(function() {
     //TODO: remove autopublish pkg and use subscribe('chapters') and sub.isReady()
     console.log('autorun::  currentTargetId: ', instance.currentTargetId.get())
     console.log('autorun:: currentAlignment: ', instance.currentAlignment.get());
+    if(instance.view.isRendered)
+      if(instance.currentTargetId.get() != null)
+        instance.$('.tei-div').each(function(idx, div) {
+          offsetContent(div);
+        });
+      else
+        instance.$('.tei-div').css({ top: 'auto', left: 'auto' });
   });
 });
+
 
 Template.chapter.onRendered(function() {
   console.log('template chapter rendered');
@@ -54,6 +68,11 @@ Template.chapter.helpers({
     if(Template.instance().currentTargetId != undefined)
       return (Template.instance().currentTargetId.get() != null);
     return false;
+  },
+  targetClass: function() {
+    if(Template.instance().currentTargetId != undefined)
+      return (Template.instance().currentTargetId.get() != null) ? "targeted" : null;
+    return null;
   },
   notes: function() {
     return (Template.instance().currentTargetId && Template.instance().currentTargetId.get() != null) ? Notes.find({ work_id: Session.get("currentWorkId"), target: "#" + Template.instance().currentTargetId.get() }) : null;
@@ -158,8 +177,9 @@ Template.chapter.events({
 
     } else { // no alignment exists
       if(targetId.indexOf('trans_') > 0) return;
-      if(template.currentTargetId.get() != null && targetId != template.currentTargetId.get())
+      if(template.currentTargetId.get() != null && targetId != template.currentTargetId.get()) {
         template.$(template.currentTargetId.get()).toggleClass('selected');
+      }
 
       template.$(event.currentTarget).addClass('selected');
       template.currentTargetId.set(targetId);
@@ -183,9 +203,20 @@ Template.translationList.onCreated(function() {
   console.log('template translationList created');
   var instance = this;
   instance.chapterContent = new ReactiveVar(null);
+  instance.currentAlignment = new ReactiveVar(null);
+  
   instance.autorun(function() {
-      if(instance.chapterContent.get() != null)
-        console.log('chapter translation loaded' );
+    if(instance.chapterContent.get() != null)
+      console.log('chapter translation loaded' );
+
+    if(instance.view.isRendered)
+      if(instance.currentAlignment.get() != null) {
+        console.log('alignment loaded');
+        instance.$('.tei-div').each(function(idx, div) {
+            offsetContent(div);
+          });
+      } else
+        instance.$('.tei-div').css({ top: 'auto', left: 'auto' });
   });
 });
 
@@ -197,7 +228,7 @@ Template.translationList.helpers({
   translationContent: function() {
     var currentChapterId = Session.get('currentChapterId');
     var index = currentChapterId.substring(currentChapterId.lastIndexOf('.') + 1) - 1;
-    var target = Template.parentData().target;
+    var target = Template.instance().data.target;
     var content = Template.instance().chapterContent.get();
 
     if(content == null && this.contents[0].chapters.length >= index && target == null) {
@@ -205,6 +236,7 @@ Template.translationList.helpers({
     }
 
     if(target && target.xtargets_target.length > 0 && content != null) {
+      Template.instance().currentAlignment.set(target);
       content = $(Template.instance().chapterContent.get());
       _.each(target.xtargets_target, function(targetVal) {
         content.find(jq(targetVal)).addClass('selected');
