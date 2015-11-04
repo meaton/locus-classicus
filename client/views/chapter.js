@@ -5,7 +5,7 @@ function jq(myid) {
 function offsetContent(div) {
   var pos = $(div).find('.tei-s.selected').position();
   if(pos != undefined && pos.top > 200)
-    $(div).css({ top: - pos.top + 115, left: pos.left });
+    $(div).css({ top: - pos.top + 115 });
 };
 
 function resetState(template) {
@@ -204,7 +204,7 @@ Template.translationList.onCreated(function() {
   var instance = this;
   instance.chapterContent = new ReactiveVar(null);
   instance.currentAlignment = new ReactiveVar(null);
-  
+
   instance.autorun(function() {
     if(instance.chapterContent.get() != null)
       console.log('chapter translation loaded' );
