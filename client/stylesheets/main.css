@@ -1,7 +1,7 @@
 /* CSS declarations go here */
 
 html, body {
-	overflow: hidden;
+	min-height: 600px;
 }
 
 .tei-head {
