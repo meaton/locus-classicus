@@ -1,6 +1,5 @@
 <template name="chapter">
   <div class="overlay" {{overlayDisplay}}></div>
-  <!--<h1>Show Chapter:</h1>-->
   {{#each contents}}
     {{#each chapters}}
       {{#if isCurrentChapter chapter_id}}
@@ -10,7 +9,7 @@
         <div id="{{chapter_id}}" class="{{chapterClasses}}" data-title="{{title}}">
           <div class="row">
             <div class="content col-xs-6">
-              <h2 class="chapter-title">{{title}}</h2>
+              <h3 class="chapter-title">{{title}}</h3>
               <div class="{{targetClass}}">
                 {{{chapterContent}}}
               </div>
