@@ -78,7 +78,7 @@ div.notes {
 	position: fixed;
 	left: 0;
 	bottom: 0;
-	overflow: auto;
+	overflow: hidden;
 	height: 300px;
 	width: calc(100% - 30px);
 	background-color: #fff;
@@ -87,6 +87,19 @@ div.notes {
 	box-shadow: 3px 3px 1px black;
 	margin: 15px 15px;
 	z-index: 12;
+}
+
+div.notes .panel-heading {
+	font-size: 1.2em;
+	font-weight: bold;
+	height: 40px;
+}
+
+div.notes .panel-body {
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 250px;
+	margin-bottom: 10px;
 }
 
 h3 > span.lang-label {
@@ -155,6 +168,10 @@ div.chapter:not(.highlight) .content .tei-s:hover, div.chapter:not(.highlight) .
 }
 
 .translation .tei-s:hover {
+}
+
+.tei-note:first-child {
+	margin-top: 0;
 }
 
 .tei-note {

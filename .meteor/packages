@@ -18,12 +18,11 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
-simple:reactive-method
-aldeed:collection2
-reactive-var
-iron:router
-aldeed:simple-schema
-dburles:collection-helpers
 http
 check
+reactive-var
+iron:router
+aldeed:collection2
+dburles:collection-helpers
+simple:reactive-method
 twbs:bootstrap
