@@ -29,15 +29,19 @@
           </div>
         </div>
         {{#if hasTarget }}
-          <div class="notes container-fluid">
-            <h3>Notes</h3>
-            {{#if notes.count }}
-              {{#each notes }}
-                {{> note}}
-              {{/each}}
-            {{else}}
-                <p>0 notes found</p>
-            {{/if}}
+          <div class="container-fluid">
+            <div class="notes panel panel-default">
+              <div class="panel-heading">Notes</div>
+              <div class="panel-body">
+                {{#if notes.count }}
+                  {{#each notes }}
+                    {{> note}}
+                  {{/each}}
+                {{else}}
+                    <p>0 notes found</p>
+                {{/if}}
+              </div>
+          </div>
           </div>
         {{/if}}
       {{/if}}

@@ -28,7 +28,7 @@
   "appName": "latinreaddemo",
 
   // Location of app (local directory)
-  "app": "~/javascript_projects/Meteor/latin-read-demo-2",
+  "app": "~/javascript_projects/Meteor/latin-read-demo",
 
   // Configure environment
   "env": {
