@@ -3,23 +3,31 @@ function jq(myid) {
 };
 
 function offsetContent(div, targetId, alignmentTargetId) {
-  var pos = $(div).find('.tei-s[id="' + targetId + '"]').position();
-  var alignmentTop = 0;
+  var target = $(div).find('.tei-s[id="' + targetId + '"]');
+  var posTop = target.position().top;
+  var height = target.height();
+
+  /*var alignmentTop = 0;
   var alignmentTarget = (alignmentTargetId && alignmentTargetId.indexOf('_trans') > 0) ? $('.translations .tei-div') : $('.content .tei-div');
 
-  if(alignmentTarget != $(div))
+  if(alignmentTarget != $(div) && alignmentTarget.find('.tei-s[id="' + alignmentTargetId + '"]').length > 0)
     alignmentTop = alignmentTarget.find('.tei-s[id="' + alignmentTargetId + '"]').position().top;
 
   if(alignmentTargetId.indexOf('_trans') > 0)
       alignmentTop = alignmentTop + 18; // (margin-top + border + padding-top) selected tei-s
+  */
 
-  if(pos != undefined) {
-    //console.log(targetId, ' :: pos top: ' + pos.top);
-    //console.log(targetId, ' :: pos left: ' + pos.left);
+  if(posTop != undefined) {
+    var heightDiv = $('.chapter').height() - 225; // static notes height
+    if($('.chapter-title')) heightDiv -= - $('.chapter-title').height();
+
+    //console.log(targetId, ' :: pos top: ' + posTop);
     //console.log(targetId, ' :: align top: ' + alignmentTop);
-    if((pos.top >= 200 && alignmentTop < 200) || (pos.top < 200 && alignmentTop >= 200) || (pos.top >= 200 && alignmentTop >= 200)) {
-      $(div).css({ top: - pos.top + 90 });
-    }
+    //console.log('height: ' + height);
+    //console.log('height div: ', heightDiv*0.90);
+
+    if((posTop + height + 50) > heightDiv*0.90)
+        $(div).css({ top: - posTop + 25 });
   }
 };
 

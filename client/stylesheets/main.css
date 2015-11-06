@@ -2,6 +2,10 @@ html, body {
 	min-height: 600px;
 }
 
+.navbar {
+	margin: 0;
+}
+
 .tei-head {
 	display: none;
 }
@@ -70,6 +74,12 @@ html, body {
   text-decoration: none;
 }
 
+div.translation-toggle {
+	min-height: 30px;
+	height: 30px;
+	padding: 3px 0;
+}
+
 div.translation-toggle > .btn-group {
 	float: right;
 }
@@ -98,7 +108,7 @@ div.notes {
 	left: 0;
 	bottom: 0;
 	overflow: hidden;
-	height: 300px;
+	height: 225px;
 	width: calc(100% - 30px);
 	background-color: #fff;
 	border: 2px solid #777;
@@ -117,7 +127,7 @@ div.notes .panel-heading {
 div.notes .panel-body {
 	overflow-y: auto;
 	overflow-x: hidden;
-	height: 250px;
+	height: 175px;
 	margin-bottom: 10px;
 }
 
@@ -157,9 +167,16 @@ h3 > span.lang-label {
 }
 
 div.chapter {
+	top: 202px;
+	bottom: 0;
 	position: absolute;
 	width: calc(100% - 30px);
 	z-index: 11;
+}
+
+div.chapter-nav {
+	min-height: 100px;
+	margin: 10px 0;
 }
 
 div.chapter-nav li.active {
@@ -212,7 +229,8 @@ div.chapter:not(.highlight) .content .tei-s:hover, div.chapter:not(.highlight) .
 }
 
 ul.works {
-  list-style: none;
+	margin: 20px 0;
+	list-style: none;
 }
 
 .translations .tei-head {
