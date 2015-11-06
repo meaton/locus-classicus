@@ -76,7 +76,7 @@ Template.chapter.helpers({
   chapterClasses: function() {
     var classes = "chapter";
     if(Template.instance().currentTargetId != undefined && Template.instance().currentTargetId.get() != null)
-      classes = classes.concat(" highlight");
+      classes += " highlight";
     return classes;
   },
   hasTarget: function() {
@@ -102,6 +102,23 @@ Template.chapter.helpers({
       var trans = Works.findOne({ work_id: { $regex: '^' + currentWorkId.substring(0, currentWorkId.indexOf('_original')) + '_trans.*' }, lang: lang });
       Session.set('currentTransId', trans.work_id);
       return trans;
+    }
+  },
+  isTranslationOn: function() {
+    return Session.get('activeTranslation');
+  },
+  toggleTranslationProps: function(isDefault) {
+    // isDefault (translation ON setting)
+    var btnClasses = "btn btn-xs";
+    if(isDefault) btnClasses += " btn-default";
+    if((Session.get('activeTranslation') && isDefault) || (!Session.get('activeTranslation') && !isDefault)) {
+      return {
+        class: btnClasses + " btn-primary active"
+      };
+    } else {
+      return {
+        class: btnClasses
+      };
     }
   },
   sourceTarget: function() {
@@ -132,6 +149,12 @@ Template.chapter.helpers({
 });
 
 Template.chapter.events({
+  "click .translation-toggle .btn": function(event, template) {
+    if(!$(event.currentTarget).hasClass('active')) {
+      if($(event.currentTarget).hasClass('btn-default')) Session.set('activeTranslation', true);
+      else Session.set('activeTranslation', false);
+    }
+  },
   "click .clear": function(event, template) {
     event.stopPropagation();
     console.log('clear selection: ' + template.currentTargetId.get());

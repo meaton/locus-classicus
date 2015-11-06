@@ -1,5 +1,3 @@
-/* CSS declarations go here */
-
 html, body {
 	min-height: 600px;
 }
@@ -72,13 +70,28 @@ html, body {
   text-decoration: none;
 }
 
+div.translation-toggle > .btn-group {
+	float: right;
+}
+
+div.translation-toggle .label {
+	font-size: 12px;
+	line-height: 1.5;
+	margin-right: 10px;
+	background-color: #fff;
+	color: #777;
+}
+
+/*
 button.clear {
 	display: none;
   float:right;
 }
+
 button.clear[disabled] {
   opacity: 0.66;
 }
+*/
 
 div.notes {
 	position: fixed;
