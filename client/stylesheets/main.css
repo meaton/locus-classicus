@@ -13,10 +13,16 @@ html, body {
 	min-height: 300px;
 }
 
-.content .targeted .tei-div, .translations .targeted .tei-div {
+.content .tei-div, .translations .tei-div {
 	position: relative;
 	top: 0;
 	bottom: 0;
+}
+
+.content .targeted .tei-div, .translations .targeted .tei-div {
+	-webkit-transition: all 0.4s ease 0,1s;
+	-moz-transition: all 0.4s ease 0.1s;
+	transition: all 0.4s ease 0.1s;
 }
 
 .overlay {

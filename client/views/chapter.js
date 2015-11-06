@@ -2,10 +2,25 @@ function jq(myid) {
   return "#" + myid.replace( /(:|\.|\[|\]|,)/g, "\\$1" );
 };
 
-function offsetContent(div) {
-  var pos = $(div).find('.tei-s.selected').position();
-  if(pos != undefined && pos.top > 200)
-    $(div).css({ top: - pos.top + 115 });
+function offsetContent(div, targetId, alignmentTargetId) {
+  var pos = $(div).find('.tei-s[id="' + targetId + '"]').position();
+  var alignmentTop = 0;
+  var alignmentTarget = (alignmentTargetId && alignmentTargetId.indexOf('_trans') > 0) ? $('.translations .tei-div') : $('.content .tei-div');
+
+  if(alignmentTarget != $(div))
+    alignmentTop = alignmentTarget.find('.tei-s[id="' + alignmentTargetId + '"]').position().top;
+
+  if(alignmentTargetId.indexOf('_trans') > 0)
+      alignmentTop = alignmentTop + 18; // (margin-top + border + padding-top) selected tei-s
+
+  if(pos != undefined) {
+    //console.log(targetId, ' :: pos top: ' + pos.top);
+    //console.log(targetId, ' :: pos left: ' + pos.left);
+    //console.log(targetId, ' :: align top: ' + alignmentTop);
+    if((pos.top >= 200 && alignmentTop < 200) || (pos.top < 200 && alignmentTop >= 200) || (pos.top >= 200 && alignmentTop >= 200)) {
+      $(div).css({ top: - pos.top + 90 });
+    }
+  }
 };
 
 function resetState(template) {
@@ -31,11 +46,11 @@ Template.chapter.onCreated(function() {
     console.log('autorun:: currentAlignment: ', instance.currentAlignment.get());
     if(instance.view.isRendered)
       if(instance.currentTargetId.get() != null)
-        instance.$('.tei-div').each(function(idx, div) {
-          offsetContent(div);
+        instance.$('.content .tei-div').each(function(idx, div) {
+          offsetContent(div, instance.currentTargetId.get(), instance.currentAlignment.get().xtargets_target[0]);
         });
       else
-        instance.$('.tei-div').css({ top: 'auto', left: 'auto' });
+        instance.$('.content .tei-div').css({ top: 0 });
   });
 });
 
@@ -212,11 +227,12 @@ Template.translationList.onCreated(function() {
     if(instance.view.isRendered)
       if(instance.currentAlignment.get() != null) {
         console.log('alignment loaded');
-        instance.$('.tei-div').each(function(idx, div) {
-            offsetContent(div);
-          });
+        instance.$('.translation > .tei-div').each(function(idx, div) {
+          offsetContent(div, instance.currentAlignment.get().xtargets_target[0], instance.currentAlignment.get().xtargets_source[0]);
+          //setTimeout(offsetContent, 50, div, instance.currentAlignment.get().xtargets_target[0]);
+        });
       } else
-        instance.$('.tei-div').css({ top: 'auto', left: 'auto' });
+        instance.$('.translation > .tei-div').css({ top: 0 });
   });
 });
 
