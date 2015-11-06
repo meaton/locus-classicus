@@ -19,12 +19,13 @@ function offsetContent(div, targetId, alignmentTargetId) {
 
   if(posTop != undefined) {
     var heightDiv = $('.chapter').height() - 225; // static notes height
-    if($('.chapter-title')) heightDiv -= - $('.chapter-title').height();
+    if($('.chapter-title').length == 1)
+      heightDiv -= $('.chapter-title').height();
 
     //console.log(targetId, ' :: pos top: ' + posTop);
     //console.log(targetId, ' :: align top: ' + alignmentTop);
-    //console.log('height: ' + height);
-    //console.log('height div: ', heightDiv*0.90);
+    //console.log(targetId, ' :: height: ' + height);
+    //console.log(targetId, ' :: height-div: ', heightDiv*0.85);
 
     if((posTop + height + 50) > heightDiv*0.90)
         $(div).css({ top: - posTop + 25 });
