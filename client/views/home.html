@@ -19,7 +19,7 @@
 </template>
 
 <template name="work_listing">
-  <li><label class="work-label nav-header"><span class="author">{{author}}</span>, {{title}}</label>
+  <li><label class="work-label nav-header"><span class="author">{{author}}</span> {{title}}</label>
     <ul class="nav nav-list book-list tree">
         {{#each contents}}
           <li><label class="book-label"><span class="glyphicon glyphicon-book"></span>Latin text <span class="book-num">[ {{convertRoman(@index)}} ]</span></label>
