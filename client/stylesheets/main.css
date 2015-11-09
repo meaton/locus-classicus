@@ -177,6 +177,7 @@ div.notes {
 	left: 0;
 	bottom: 0;
 	overflow: hidden;
+	min-height: 156px;
 	height: 26%;
 	width: calc(100% - 30px);
 	background-color: #fff;
