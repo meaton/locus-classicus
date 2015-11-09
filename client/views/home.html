@@ -1,7 +1,7 @@
 <template name="home">
   <div class="outline">
     <!--<p>List of Latin works:</p>-->
-    <ul class="works">
+    <ul class="works nav nav-list">
       {{#each works}}
         {{> work_listing}}
       {{/each}}
@@ -19,18 +19,20 @@
 </template>
 
 <template name="work_listing">
-  <li>{{title}} <i>{{author}}</i>
-    <ul>
-      {{#each contents}}
-        {{> book_listing}}
-      {{/each}}
+  <li><label class="work-label nav-header"><span class="author">{{author}}</span>, {{title}}</label>
+    <ul class="nav nav-list book-list tree">
+        {{#each contents}}
+          <li><label class="book-label"><span class="glyphicon glyphicon-book"></span>Latin text <span class="book-num">[ {{convertRoman(@index)}} ]</span></label>
+            {{> book_listing}}
+          </li>
+        {{/each}}
     </ul>
   </li>
 </template>
 
 <template name="book_listing">
-  <li>{{book_id}}
-    <ul>
+  <!--<li><label class="book-label">{{book_id}}</label>-->
+    <ul class="nav nav-list chapters-list tree">
       {{#each chapters}}
         <li>
           <a href="{{pathFor route='chapter.show' class='chapterLink'}}">
@@ -39,5 +41,5 @@
         </li>
       {{/each}}
     </ul>
-  </li>
+  <!--</li>-->
 </template>
