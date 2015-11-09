@@ -129,10 +129,10 @@ div.notes .panel-body {
 	position: absolute;
 	top: 40px;
 	width: 100%;
-	height: calc(100% - 50px);
+	height: calc(100% - 45px);
 	overflow-y: auto;
 	overflow-x: hidden;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 h3 > span.lang-label {
