@@ -18,7 +18,7 @@ function offsetContent(div, targetId, alignmentTargetId) {
   */
 
   if(posTop != undefined) {
-    var heightDiv = $('.chapter').height() - 225; // static notes height
+    var heightDiv = $('.chapter').height() - (screen.height*0.26); // static notes height
     if($('.chapter-title').length == 1)
       heightDiv -= $('.chapter-title').height();
 

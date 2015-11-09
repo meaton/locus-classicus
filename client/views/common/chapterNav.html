@@ -2,7 +2,9 @@
   <div class="chapter-nav" role="navigation">
     {{#each workContents}}
       <ul class="books-list list-group-horizontal" data-id="{{book_id}}">
-        <li class="{{maybeActiveBook}} list-group-item">{{toRoman @index}}</li>
+        <li class="{{maybeActiveBook}} list-group-item">
+          <a href="{{pathFor 'book'}}">{{toRoman @index}}</a>
+        </li>
       </ul>
       <ul class="chapters-list list-group-horizontal">
         {{#each chapters}}

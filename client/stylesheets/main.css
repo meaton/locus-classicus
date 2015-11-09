@@ -138,7 +138,7 @@ html, body {
   border-color: #ddd;
 }
 
-.books-list.list-group-horizontal li, .books-list.list-group-horizontal li.active {
+.books-list.list-group-horizontal li {
   color: #337ab7;
   text-decoration: none;
 }

@@ -22,7 +22,7 @@ Template.chapterNav.helpers({
 });
 
 Template.chapterNav.events({
-  "click .chapters-list .list-group-item": function(event, template){
+  "click .chapter-nav .list-group-item": function(event, template) {
     var link = $(event.currentTarget).find('a');
     if(link) Router.go(link.attr('href'));
   }
