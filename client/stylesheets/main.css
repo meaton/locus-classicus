@@ -274,7 +274,7 @@ div.chapter-nav {
 	margin: 10px 0;
 }
 
-div.chapter-nav li.active {
+div.chapter-nav li:hover a {
   text-decoration: underline;
 }
 
