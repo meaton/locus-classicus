@@ -108,7 +108,7 @@ div.notes {
 	left: 0;
 	bottom: 0;
 	overflow: hidden;
-	height: 225px;
+	height: 26%;
 	width: calc(100% - 30px);
 	background-color: #fff;
 	border: 2px solid #777;
@@ -125,9 +125,11 @@ div.notes .panel-heading {
 }
 
 div.notes .panel-body {
+	position: absolute;
+	top: 40px;
 	overflow-y: auto;
 	overflow-x: hidden;
-	height: 175px;
+	height: calc(100% - 50px);
 	margin-bottom: 10px;
 }
 
