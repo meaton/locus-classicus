@@ -2,13 +2,34 @@ html, body {
 	min-height: 600px;
 }
 
+footer {
+	height: 80px;
+	max-height: 80px;
+	text-align: center;
+}
+
+.clarin-logo {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.clarin-logo img {
+	padding-left: 20px;
+	height: 50px;
+	max-height: 50px;
+}
+
 .glyphicon {
 	padding-top: 2px;
 	padding-right: 8px;
 }
 
-.navbar {
+.navbar, .navbar-text {
 	margin: 0;
+}
+
+.navbar-collapse {
+	padding-right: 0;
 }
 
 .works > li:only-child {
