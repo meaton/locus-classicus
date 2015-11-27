@@ -25,4 +25,5 @@ iron:router
 aldeed:collection2
 dburles:collection-helpers
 simple:reactive-method
+less
 twbs:bootstrap

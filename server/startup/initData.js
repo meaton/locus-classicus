@@ -18,6 +18,7 @@ function loadFixture(fixtures, collection, callback) {
 };
 
 Meteor.startup(function () {
+  console.log('starting up..');
   /* package: http */
   var restpath = Meteor.settings.exist.protocol + "://" + Meteor.settings.exist.host + ":" + Meteor.settings.exist.port + Meteor.settings.exist.restpath;
   var json = HTTP.call("GET", restpath  + "/works/fixture", { auth: 'admin:admin', headers: { Accept: 'application/json' } }).data;
