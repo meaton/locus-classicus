@@ -8,6 +8,11 @@ footer {
 	text-align: center;
 }
 
+/* flexible width for the fancybox wrapper */
+.fancybox-wrap {
+  width: 80% !important;
+}
+
 .clarin-logo {
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
@@ -30,6 +35,16 @@ footer {
 
 .navbar-collapse {
 	padding-right: 0;
+}
+
+.outline {
+
+}
+
+.intro {
+	padding: 15px;
+	text-align: justify;
+	width: 100%;
 }
 
 .works > li:only-child {

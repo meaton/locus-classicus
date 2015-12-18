@@ -1,3 +1,39 @@
 <head>
   <title>Locus Classicus</title>
+  <script language="javascript">
+    $(document).ready(function() {
+      var player;
+      $('.videofancy').fancybox({
+        tpl: {
+          // wrap template with custom inner DIV: the empty player container
+          wrap: '<div class="fancybox-wrap" tabIndex="-1">' +
+                '<div class="fancybox-skin">' +
+                '<div class="fancybox-outer">' +
+                '<div id="player">' + // player container replaces fancybox-inner
+                '</div></div></div></div>'
+        },
+
+        beforeShow: function () {
+          var fileUrl = '/video/LC_presentation_dk.mp4';
+          // install player into empty container
+          player = flowplayer("#player", {
+            autoplay: true,
+            ratio: 9/16,
+            qualities: "540p",
+            defaultQuality: "540p",
+            clip: {
+              autoplay: true,
+              sources: [
+                { type: "video/mp4", src: fileUrl }
+              ]
+            }
+          });
+        },
+        beforeClose: function () {
+          // important! shut down the player as fancybox removes container
+          player.shutdown();
+        }
+      });
+    });
+  </script>
 </head>

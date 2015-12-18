@@ -24,6 +24,7 @@ diff-sequence@1.0.1
 ecmascript@0.1.6
 ecmascript-runtime@0.2.6
 ejson@1.0.7
+emotiveapps:flowplayer@0.0.7
 es5-shim@4.1.14
 fastclick@1.0.7
 geojson-utils@1.0.4
@@ -66,6 +67,7 @@ retry@1.0.4
 routepolicy@1.0.6
 session@1.1.1
 simple:reactive-method@1.0.2
+sinda:fancybox@1.0.1
 spacebars@1.0.7
 spacebars-compiler@1.0.7
 standard-minifiers@1.0.2

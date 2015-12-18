@@ -1,6 +1,11 @@
 <template name="home">
   <div class="outline">
-    <!--<p>List of Latin works:</p>-->
+    <div class="intro">
+      <h4>Velkommen til Locus Classicus</h4>
+      <p>Locus Classicus er et forskningsprojekt om digital læsning af græske og latinske tekster. Vores mål er at tilbyde fri adgang til et bredt udvalg af græske og latinske tekster udstyret med en lang række sproglige og indholdsmæssige hjælpemidler i en lettilgængelig og overskuelig form.
+Her på siden finder du en prototype af den læseapplikation der danner kernen i projektet. Applikationen vil ligesom udvalget af tekster løbende blive opdateret. Teksterne ledsages alle af en oversættelse til mindst et moderne sprog og til flere af dem er der desuden kommentarer. Som en hjælp til gloser og ordbogsopslag anbefaler vi at man benytter cursor-værktøjet Alpheios[http://alpheios.net/] der virker i teksternes analysemodus.
+Hvis du vil vide lidt mere om projektet og hvordan man bruger læseapplikationen kan du se vores korte <a href="#introvideo" class="videofancy">introduktionsvideo her</a>.</p>
+    </div>
     <ul class="works nav nav-list">
       {{#each works}}
         {{> work_listing}}
