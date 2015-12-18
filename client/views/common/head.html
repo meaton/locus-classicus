@@ -18,6 +18,7 @@
           // install player into empty container
           player = flowplayer("#player", {
             autoplay: true,
+            embed: false,
             ratio: 9/16,
             qualities: "540p",
             defaultQuality: "540p",
@@ -26,7 +27,8 @@
               sources: [
                 { type: "video/mp4", src: fileUrl }
               ]
-            }
+            },
+
           });
         },
         beforeClose: function () {
