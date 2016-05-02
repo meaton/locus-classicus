@@ -26,6 +26,7 @@ Hvis du vil vide lidt mere om projektet og hvordan man bruger læseapplikationen
 <template name="work_listing">
   <li><label class="work-label nav-header"><span class="author">{{author}}</span> {{title}}</label>
     <ul class="nav nav-list book-list tree">
+      <!-- TODO: change to work -> book listing without chapter titles -->
         {{#each contents}}
           <li><label class="book-label"><span class="glyphicon glyphicon-book"></span>Latin text <span class="book-num">[ {{convertRoman(@index)}} ]</span></label>
             {{> book_listing}}

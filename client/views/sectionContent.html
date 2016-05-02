@@ -1,0 +1,17 @@
+<template name="sectionContent">
+  <div id="{{section_id}}" class="{{sessionClasses}}" data-title="{{title}}">
+        <div class="row">
+          <div class="content {{#if isTranslationOn }}col-xs-6{{else}}col-xs-12{{/if}}">
+            {{#if title}}<h3 class="section-title">{{title}}</h3>{{/if}}
+            <div class="{{targetClass}}">
+              {{{content}}}
+            </div>
+          </div>
+          {{#if isTranslationOn }}
+            <div class="translations col-xs-6">
+              {{> translation target=alignment }}
+            </div>
+          {{/if}}
+        </div>
+      </div>
+</template>

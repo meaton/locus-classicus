@@ -1,0 +1,29 @@
+<template name="contentNav">
+  <div class="content-nav" role="navigation">
+    {{#each workContents}}
+      <ul class="books-list list-group-horizontal" data-id="{{book_id}}">
+        <li class="{{maybeActiveBook}} list-group-item">
+          <a href="{{pathFor 'book'}}">{{toRoman @index}}</a>
+        </li>
+      </ul>
+      {{#if chapters}}
+        <ul class="chapters-list list-group-horizontal">
+          {{#each chapters}}
+            <li data-id="{{chapter_id}}" class="{{maybeActiveChapter}} list-group-item">
+              <a href="{{pathFor 'chapter.show'}}" >{{toArabic @index}}</a>
+            </li>
+          {{/each}}
+        </ul>
+      {{/if}}
+      {{#if sections}}
+        <ul class="sections-list list-group-horizontal">
+          {{#each chapters}}
+            <li data-id="{{section_id}}" class="{{maybeActiveSection}} list-group-item">
+              <a href="{{pathFor 'section.show'}}" >{{toArabic @index}}</a>
+            </li>
+          {{/each}}
+        </ul>
+      {{/if}}
+    {{/each}}
+  </div>
+</template>

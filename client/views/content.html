@@ -1,0 +1,54 @@
+<template name="LC_content">
+  <div class="overlay" {{overlayDisplay}}></div>
+  <div class="translation-toggle clearfix">
+    <!--<button type="button" class="btn clear" disabled>Clear Selection</button>-->
+    <div class="btn-group" role="group" aria-label="Show translations" data-toggle="buttons">
+      <button {{toggleTranslationProps true}}>ON</button>
+      <button {{toggleTranslationProps}}>OFF</button>
+    </div>
+    <span class="label label-info pull-right">Show Translations</span>
+  </div>
+
+  {{#each book in contents}}
+    {{#each chapter in book.chapters}}
+      {{#if isCurrentChapter chapter.chapter_id}}
+          {{> chapterContent (targetArgs chapter)}}
+      {{/if}}
+    {{/each}}
+    {{#each section in contents.sections}}
+      {{#if isCurrentSection section.section_id}}
+        {{> sectionContent (targetARgs section)}}
+      {{/if}}
+    {{/each}}
+  {{/each}}
+
+  {{> inlineNotes condition=hasTarget notes=notes}}
+</template>
+
+<template name="inlineNotes">
+  {{#if condition }}
+    <div class="container-fluid">
+      <div class="notes panel panel-default">
+        <div class="panel-heading">Notes</div>
+        <div class="panel-body">
+          {{#if notes.count }}
+            {{#each notes }}
+              {{> note}}
+            {{/each}}
+          {{else}}
+            <p>0 notes found</p>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  {{/if}}
+</template>
+
+<template name="note">
+  <div class="tei-note">
+    <div class="tei-label">{{{label}}}</div>
+    <div class="note-body">
+      {{{body}}}
+    </div>
+  </div>
+</template>

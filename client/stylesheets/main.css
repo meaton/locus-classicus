@@ -284,12 +284,12 @@ div.chapter {
 	z-index: 11;
 }
 
-div.chapter-nav {
+div.content-nav {
 	min-height: 100px;
 	margin: 10px 0;
 }
 
-div.chapter-nav li:hover a {
+div.content-nav li:hover a {
   text-decoration: underline;
 }
 

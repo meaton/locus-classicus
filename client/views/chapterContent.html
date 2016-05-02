@@ -1,0 +1,26 @@
+<template name="chapterContent">
+  <div id="{{chapter_id}}" class="{{chapterClasses}}" data-title="{{title}}">
+        <div class="row">
+          <div class="content {{#if isTranslationOn }}col-xs-6{{else}}col-xs-12{{/if}}">
+            <h3 class="chapter-title">{{title}}</h3>
+            <div class="{{targetClass}}">
+              {{{content}}}
+            </div>
+            <!--<div class="targetAlignment">Selection:
+              <i>
+                {{#if hasHarget}}
+                  {{sourceTarget}}
+                {{else}}
+                  none
+                {{/if}}
+              </i>
+            </div>-->
+          </div>
+          {{#if isTranslationOn }}
+            <div class="translations col-xs-6">
+              {{> translationContent (targetArgs translation)}}
+            </div>
+          {{/if}}
+        </div>
+      </div>
+</template>

@@ -1,0 +1,17 @@
+<template name="translationContent">
+    <h3>Translation <span class="lang-label">[{{lang}}]</span></h3>
+  <div class="{{#if targetValue }}targeted{{/if}}">
+    <div class="translation" lang="{{lang}}">
+      {{{translationContent}}}
+    </div>
+  </div>
+  <!--<div class="targetAlignment">Target:
+    <i>
+    {{#if targetValue}}
+      {{targetValue}}
+    {{else}}
+      none
+    {{/if}}
+    </i>
+  </div>-->
+</template>
