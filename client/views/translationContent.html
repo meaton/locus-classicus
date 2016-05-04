@@ -1,0 +1,19 @@
+<template name="translationContent">
+  {{#let translation=getTranslation }}
+    <h3>Translation <span class="lang-label">[{{translation.lang}}]</span></h3>
+    <div class="{{#if hasTarget }}targeted{{/if}}">
+      <div class="translation" lang="{{lang}}">
+        {{{content translation onChange=setAlignment}}}
+      </div>
+    </div>
+    <!--<div class="targetAlignment">Target:
+      <i>
+      {{#if targetValue}}
+        {{targetValue}}
+      {{else}}
+        none
+      {{/if}}
+      </i>
+    </div>-->
+  {{/let}}
+</template>

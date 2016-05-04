@@ -46,13 +46,7 @@ Template.LC_content.helpers({
     return Template.instance().currentTargetId.get() != null;
   },
   targetArgs: function(chapter) {
-    // TODO: Handle cursor for multiple Alignments (translations), Filter on selected translation available in interface
-    var alignment = null;
-
-    if(Template.instance().currentTargetId && Template.instance().currentTargetId.get() != null)
-      alignment = Alignments.findOne({ work_id: Session.get('currentWorkId'), xtargets_source: Template.instance().currentTargetId.get() })
-
-    return { chapter_id: chapter.chapter_id, title: chapter.title, target: Template.instance().currentTargetId, alignment: alignment };
+    return { chapter_id: chapter.chapter_id, title: chapter.title, target: Template.instance().currentTargetId };
   },
   notes: function() {
     return (Template.instance().currentTargetId && Template.instance().currentTargetId.get() != null) ? Notes.find({ work_id: Session.get("currentWorkId"), target: "#" + Template.instance().currentTargetId.get() }) : null;

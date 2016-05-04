@@ -17,7 +17,7 @@
     {{/each}}
     {{#each section in contents.sections}}
       {{#if isCurrentSection section.section_id}}
-        {{> sectionContent (targetARgs section)}}
+        {{> sectionContent (targetArgs section)}}
       {{/if}}
     {{/each}}
   {{/each}}
