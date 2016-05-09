@@ -11,4 +11,10 @@ Alignments.helpers({
   }
 });
 
+if (Meteor.isServer) {
+  Meteor.publish('alignments-by-work', function notesPublication(workId) {
+    return Alignments.find({ work_id: workId });
+  });
+}
+
 Alignments.attachSchema(Schemas.Alignment);

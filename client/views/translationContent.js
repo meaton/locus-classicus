@@ -21,6 +21,8 @@ Template.translationContent.onCreated(function() {
       }
     }
   });
+  var query = '^' + Session.get('currentWorkId').substring(0, Session.get('currentWorkId').indexOf('_original')) + '_trans.*';
+  Meteor.subscribe('current-translations', query);
 });
 
 Template.translationContent.onRendered(function() {

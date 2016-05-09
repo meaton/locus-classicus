@@ -1,3 +1,7 @@
+Template.home.onRendered(function() {
+  console.log('home template rendered');
+});
+
 Template.home.helpers({
   works: function(lang) {
     if(lang == undefined) lang = 'la';

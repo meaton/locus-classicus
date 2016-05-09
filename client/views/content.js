@@ -29,6 +29,12 @@ Template.LC_content.onCreated(function() {
       else
         instance.$('.content .tei-div').css({ top: 0 });
   });
+
+  //subscribe alignments
+  Meteor.subscribe('alignments-by-work', Session.get('currentWorkId'));
+
+  //subscribe notes
+  Meteor.subscribe('notes-by-work', Session.get("currentWorkId"));
 });
 
 Template.LC_content.onRendered(function() {

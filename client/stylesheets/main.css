@@ -8,6 +8,11 @@ footer {
 	text-align: center;
 }
 
+.loading {
+	color: #888;
+	display: none;
+}
+
 /* flexible width for the fancybox wrapper */
 .fancybox-wrap {
   width: 80% !important;
