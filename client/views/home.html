@@ -38,6 +38,7 @@ Hvis du vil vide lidt mere om projektet og hvordan man bruger læseapplikationen
 
 <template name="book_listing">
   <!--<li><label class="book-label">{{book_id}}</label>-->
+  {{#if chapters}}
     <ul class="nav nav-list chapters-list tree">
       {{#each chapters}}
         <li>
@@ -47,5 +48,17 @@ Hvis du vil vide lidt mere om projektet og hvordan man bruger læseapplikationen
         </li>
       {{/each}}
     </ul>
+  {{else}}
+    <ul class="nav nav-list section-list tree">
+      {{#each sections}}
+        <li>
+          <a href="{{pathFor route='section.show' class='sectionLink'}}">
+            <span>{{getIndex @index}}</span>
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+  {{/if}}
+
   <!--</li>-->
 </template>

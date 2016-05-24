@@ -22,6 +22,12 @@ Template.work_listing.helpers({
   }
 });
 
+Template.book_listing.helpers({
+  getIndex: function(idx){
+    return new String(idx+1);
+  }
+});
+
 Template.work_listing.events({
   "click .nav-list li > label": function(event, template) {
     var parent = template.$(event.currentTarget).parent();

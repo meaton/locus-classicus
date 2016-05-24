@@ -24,7 +24,8 @@ Template.LC_content.onCreated(function() {
     if(instance.view.isRendered)
       if(instance.currentTargetId.get() != null)
         instance.$('.content .tei-div').each(function(idx, div) {
-          LatinRead.offsetContent(div, instance.currentTargetId.get(), instance.currentAlignment.get().xtargets_target[0]);
+          var alignmentTarget = (instance.currentAlignment.get() != null) ? instance.currentAlignment.get().xtargets_target[0] : null; //TODO: currently unused variable
+          LatinRead.offsetContent(div, instance.currentTargetId.get(), alignmentTarget);
         });
       else
         instance.$('.content .tei-div').css({ top: 0 });
@@ -46,13 +47,16 @@ Template.LC_content.helpers({
     return (chapterId == Session.get('currentChapterId'));
   },
   isCurrentSection: function(sectionId) {
-    return (sectionId == Session.get('currentSessionId'));
+    return (sectionId == Session.get('currentSectionId'));
   },
   hasTarget: function() {
     return Template.instance().currentTargetId.get() != null;
   },
-  targetArgs: function(chapter) {
+  targetArgsChapter: function(chapter) {
     return { chapter_id: chapter.chapter_id, title: chapter.title, target: Template.instance().currentTargetId };
+  },
+  targetArgsSection: function(section) {
+    return { section_id: section.section_id, title: section.title, target: Template.instance().currentTargetId };
   },
   notes: function() {
     return (Template.instance().currentTargetId && Template.instance().currentTargetId.get() != null) ? Notes.find({ work_id: Session.get("currentWorkId"), target: "#" + Template.instance().currentTargetId.get() }) : null;
@@ -158,16 +162,20 @@ Template.LC_content.events({
 
       // update DOM
       template.$(LatinRead.jq(targetId)).addClass('focus'); //TODO: focus on entire source section if m-1 link and translation-select?
+
       for(var i=0; i < alignment.xtargets_source.length; i++)
         template.$(LatinRead.jq(alignment.xtargets_source[i])).addClass('selected');
 
     } else { // no alignment exists
       if(targetId.indexOf('trans_') > 0) return;
+
       if(template.currentTargetId.get() != null && targetId != template.currentTargetId.get()) {
-        template.$(template.currentTargetId.get()).toggleClass('selected');
+        template.$(LatinRead.jq(template.currentTargetId.get())).toggleClass('selected');
       }
 
-      template.$(event.currentTarget).addClass('selected');
+      template.$(LatinRead.jq(targetId)).addClass('focus');
+      template.$(LatinRead.jq(targetId)).addClass('selected');
+
       template.currentTargetId.set(targetId);
     }
 
@@ -179,6 +187,11 @@ Template.LC_content.events({
     resetState(template);
   },
   "click .chapter.highlight": function(event, template) {
+    event.stopPropagation();
+    console.log('click target: ' + event.target.id);
+    if(event.target.id != template.currentTargetId.get()) resetState(template);
+  },  
+  "click .section.highlight": function(event, template) {
     event.stopPropagation();
     console.log('click target: ' + event.target.id);
     if(event.target.id != template.currentTargetId.get()) resetState(template);

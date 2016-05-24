@@ -40,8 +40,7 @@ Template.translationContent.helpers({
       return Works.findOne({ work_id: currentTransId });
     } else {
       var trans = Works.findOne({ work_id: { $regex: '^' + currentWorkId.substring(0, currentWorkId.indexOf('_original')) + '_trans.*' }, lang: lang });
-      Session.set('currentTransId', trans.work_id);
-
+      if(trans) Session.set('currentTransId', trans.work_id);
       return trans;
     }
   },

@@ -12,12 +12,12 @@
   {{#each book in contents}}
     {{#each chapter in book.chapters}}
       {{#if isCurrentChapter chapter.chapter_id}}
-          {{> chapterContent (targetArgs chapter)}}
+          {{> chapterContent (targetArgsChapter chapter)}}
       {{/if}}
     {{/each}}
-    {{#each section in contents.sections}}
+    {{#each section in book.sections}}
       {{#if isCurrentSection section.section_id}}
-        {{> sectionContent (targetArgs section)}}
+        {{> sectionContent (targetArgsSection section)}}
       {{/if}}
     {{/each}}
   {{/each}}

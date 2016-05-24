@@ -30,7 +30,7 @@ Meteor.startup(function () {
 
       work.contents = (_.isArray(work.contents.book)) ? work.contents.book : [work.contents.book];
       work.contents = _.map(work.contents, function(book) {
-        if(book.sections) book.sections = (_.isArray(book.chapters.chapter)) ? book.chapters.chapter : [book.chapters.chapter]; 
+        if(book.sections) book.sections = (_.isArray(book.sections.section)) ? book.sections.section : [book.sections.section]; 
         if(book.chapters) book.chapters = (_.isArray(book.chapters.chapter)) ? book.chapters.chapter : [book.chapters.chapter];
         return book;
       });

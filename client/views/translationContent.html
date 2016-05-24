@@ -1,5 +1,6 @@
 <template name="translationContent">
   {{#let translation=getTranslation }}
+    {{#if translation }}
     <h3>Translation <span class="lang-label">[{{translation.lang}}]</span></h3>
     <div class="{{#if hasTarget }}targeted{{/if}}">
       <div class="translation" lang="{{lang}}">
@@ -15,5 +16,9 @@
       {{/if}}
       </i>
     </div>-->
+     {{else}}
+      <h3>Translation <span class="lang-label">[None]</span></h3>
+      <div class="no-translation"></div>
+     {{/if}}
   {{/let}}
 </template>
