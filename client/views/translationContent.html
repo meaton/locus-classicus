@@ -5,7 +5,9 @@
     <div class="{{#if hasTarget }}targeted{{/if}}">
       <div class="translation" lang="{{lang}}">
         {{{content translation onChange=setAlignment}}}
-        <div class="attribution desc">{{{ getDescription translation}}}</div>
+        {{#with translation}}
+          {{#if description }}<div class="attribution desc">{{{ description }}}</div>{{/if}}
+        {{/with}}
       </div>
     </div>
     <!--<div class="targetAlignment">Target:

@@ -5,7 +5,7 @@
             {{#if title}}<h3 class="section-title">{{title}}</h3>{{else}}<h3 class="section-title"><i>no_title: {{section_id}}</i></h3>{{/if}}
             <div class="{{targetClass}}">
               {{{content}}}
-              <div class="attribution desc">{{{desc}}}</div>
+              {{#if desc }}<div class="attribution desc">{{{desc}}}</div>{{/if}}
             </div>
           </div>
           {{#if isTranslationOn }}
