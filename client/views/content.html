@@ -8,19 +8,20 @@
     </div>
     <span class="label label-info pull-right">Show Translations</span>
   </div>
-
-  {{#each book in contents}}
-    {{#each chapter in book.chapters}}
-      {{#if isCurrentChapter chapter.chapter_id}}
-          {{> chapterContent (targetArgsChapter chapter)}}
-      {{/if}}
+  {{#let desc=description}}
+    {{#each book in contents}}
+      {{#each chapter in book.chapters}}
+        {{#if isCurrentChapter chapter.chapter_id}}
+            {{> chapterContent (targetArgsChapter chapter desc)}}
+        {{/if}}
+      {{/each}}
+      {{#each section in book.sections}}
+        {{#if isCurrentSection section.section_id}}
+          {{> sectionContent (targetArgsSection section desc) }}
+        {{/if}}
+      {{/each}}
     {{/each}}
-    {{#each section in book.sections}}
-      {{#if isCurrentSection section.section_id}}
-        {{> sectionContent (targetArgsSection section)}}
-      {{/if}}
-    {{/each}}
-  {{/each}}
+  {{/let}}
 
   {{> inlineNotes condition=hasTarget notes=notes}}
 </template>

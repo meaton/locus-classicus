@@ -44,6 +44,12 @@ Template.translationContent.helpers({
       return trans;
     }
   },
+  getDescription: function(translation) {
+    if(translation && translation.description)
+      return translation.description;
+    else
+      return null;
+  },
   setAlignment: function() {
     // TODO: Handle cursor for multiple Alignments (translations), Filter on selected translation available in interface
     if(this.target.get() != null) {

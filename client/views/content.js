@@ -52,11 +52,11 @@ Template.LC_content.helpers({
   hasTarget: function() {
     return Template.instance().currentTargetId.get() != null;
   },
-  targetArgsChapter: function(chapter) {
-    return { chapter_id: chapter.chapter_id, title: chapter.title, target: Template.instance().currentTargetId };
+  targetArgsChapter: function(chapter, desc) {
+    return { chapter_id: chapter.chapter_id, title: chapter.title, desc: desc, target: Template.instance().currentTargetId };
   },
-  targetArgsSection: function(section) {
-    return { section_id: section.section_id, title: section.title, target: Template.instance().currentTargetId };
+  targetArgsSection: function(section, desc) {
+    return { section_id: section.section_id, title: section.title, desc: desc, target: Template.instance().currentTargetId };
   },
   notes: function() {
     return (Template.instance().currentTargetId && Template.instance().currentTargetId.get() != null) ? Notes.find({ work_id: Session.get("currentWorkId"), target: "#" + Template.instance().currentTargetId.get() }) : null;
@@ -190,7 +190,7 @@ Template.LC_content.events({
     event.stopPropagation();
     console.log('click target: ' + event.target.id);
     if(event.target.id != template.currentTargetId.get()) resetState(template);
-  },  
+  },
   "click .section.highlight": function(event, template) {
     event.stopPropagation();
     console.log('click target: ' + event.target.id);
