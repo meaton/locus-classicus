@@ -5,20 +5,30 @@ Template.home.onRendered(function() {
 Template.home.helpers({
   works: function(lang) {
     if(lang == undefined) lang = 'la';
-    return Works.find({ lang: lang });
+    return Works.find({ lang: lang }, { sort: { author: 1}});
   }
 });
 
 Template.translationsList.helpers({
   works: function(lang) {
     if(lang == undefined) lang = 'da';
-    return Works.find({ lang: lang });
+    return Works.find({ lang: lang }, { sort: { author: 1}});
   }
+});
+
+Template.work_listing.onCreated(function() {
+    this.open = new ReactiveVar(false);
 });
 
 Template.work_listing.helpers({
   convertRoman: function(idx){
     return LatinRead.convertRoman(idx+1);
+  },
+  open: function() {
+    return Template.instance().open.get();
+  },
+  classes: function() {
+    return (Template.instance().open.get() === true) ? "open": "";
   }
 });
 
@@ -29,11 +39,11 @@ Template.book_listing.helpers({
 });
 
 Template.work_listing.events({
-  "click .nav-list li > label": function(event, template) {
+  "click li > label.work-label": function(event, template) {
     var parent = template.$(event.currentTarget).parent();
 
-    if(parent.hasClass('open')) parent.removeClass('open');
-    else parent.addClass('open');
+    if(template.open.get()) template.open.set(false)
+    else template.open.set(true);
 
     parent.children('ul.tree').slideToggle(200);
   }

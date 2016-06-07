@@ -6,7 +6,7 @@
       <div class="translation" lang="{{lang}}">
         {{{content translation onChange=setAlignment}}}
         {{#with translation}}
-          {{#if description }}<div class="attribution desc">{{{ description }}}</div>{{/if}}
+          {{> attribution}}
         {{/with}}
       </div>
     </div>

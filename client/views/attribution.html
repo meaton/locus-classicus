@@ -1,0 +1,16 @@
+<template name="attribution">
+  {{#if isVisible}}
+    <div class="attribution">
+      {{#if description}}
+        <p class="description">
+          {{{description}}}
+        </p>
+      {{/if}}
+      {{#if license}}
+        <p class="license">
+          {{license}}
+        </p>
+      {{/if}}
+    </div>
+  {{/if}}
+</template>

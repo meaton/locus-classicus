@@ -7,7 +7,8 @@ Template.contentNav.helpers({
   },
   maybeActiveBook: function() {
     var currentRoute = Router.current();
-    return (currentRoute && (!_.isEmpty(_.where(this.contents, { chapter_id: currentRoute.params.chapter_id })) || !_.isEmpty(_.where(this.contents, { section_id: currentRoute.params.section_id } )) )) ? 'active' : null;
+    return (currentRoute && (!_.isEmpty(_.where(this.chapters, { chapter_id: currentRoute.params.chapter_id }))
+    || !_.isEmpty(_.where(this.sections, { section_id: currentRoute.params.section_id } )) )) ? 'active' : null;
   },
   maybeActiveChapter: function() {
     var currentRoute = Router.current();

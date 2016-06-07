@@ -8,16 +8,16 @@
     </div>
     <span class="label label-info pull-right">Show Translations</span>
   </div>
-  {{#let desc=description}}
+  {{#let attrProps=getAttributionProps}}
     {{#each book in contents}}
       {{#each chapter in book.chapters}}
         {{#if isCurrentChapter chapter.chapter_id}}
-            {{> chapterContent (targetArgsChapter chapter desc)}}
+            {{> chapterContent (targetArgsChapter chapter attrProps)}}
         {{/if}}
       {{/each}}
       {{#each section in book.sections}}
         {{#if isCurrentSection section.section_id}}
-          {{> sectionContent (targetArgsSection section desc) }}
+          {{> sectionContent (targetArgsSection section attrProps) }}
         {{/if}}
       {{/each}}
     {{/each}}

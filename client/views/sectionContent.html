@@ -2,10 +2,10 @@
   <div id="{{section_id}}" class="{{sectionClasses}}" data-title="{{title}}">
         <div class="row">
           <div class="content {{#if isTranslationOn }}col-xs-6{{else}}col-xs-12{{/if}}">
-            {{#if title}}<h3 class="section-title">{{title}}</h3>{{else}}<h3 class="section-title"><i>no_title: {{section_id}}</i></h3>{{/if}}
+            {{#if title}}<h3 class="section-title">{{title}}</h3>{{else}}<h3 class="section-title">&nbsp;</h3>{{/if}}
             <div class="{{targetClass}}">
               {{{content}}}
-              {{#if desc }}<div class="attribution desc">{{{desc}}}</div>{{/if}}
+              {{> attribution attrProps}}
             </div>
           </div>
           {{#if isTranslationOn }}

@@ -6,13 +6,14 @@ footer {
   max-height: 80px;
   text-align: center;
 }
+label {
+  line-height: 1.5;
+}
 .loading {
   color: #888;
   display: none;
 }
-
 /* flexible width for the fancybox wrapper */
-
 .fancybox-wrap {
   width: 80% !important;
 }
@@ -41,30 +42,45 @@ footer {
   text-align: justify;
   width: 100%;
 }
-.works > li:only-child {
+ul.works {
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+}
+ul.works > li {
+  background: none;
+}
+ul.works > li:not(:last-child) {
+  border-bottom: 1px solid #e7e7e7;
+}
+ul.works > li:only-child {
   border: none !important;
 }
 .works > li > ul {
-  padding-left: 20px;
+  padding-left: 0px;
 }
-.nav-list li:only-child {
+.nav-list book-list > li:only-child {
   padding: 0;
-  border: 1px solid #eee;
+  border: 1px solid #e7e7e7;
   border-radius: 3px;
 }
-.nav-list li {
-  padding-left: 15px;
+.book-list li {
+  padding-left: 0px;
+  list-style: none;
+  background-color: rgb(255, 255, 255);
 }
-.nav-list li.open label {
+.nav-list li.open > label {
   background-color: rgb(248, 248, 248);
-  background-color: rgba(238, 238, 238, 0.5);
 }
 .nav-list label {
   margin: 0;
 }
+.book-list.tree {
+  display: none;
+}
 .chapters-list.tree, .section-list.tree {
   display: none;
 }
+/**
 .chapters-list.tree > li, .section-list.tree > li {
   background-color: rgb(248, 248, 248);
   background-color: rgba(238, 238, 238, 0.5);
@@ -72,24 +88,43 @@ footer {
 .chapters-list.tree > li:hover, .section-list.tree > li:hover {
   background-color: rgb(238, 238, 238);
   background-color: rgba(238, 238, 238, 1);
-}
+}*/
 .work-label, .book-label {
   width: 100%;
-  line-height: 1.5;
   padding: 10px 15px;
+}
+.book-label {
+  padding: 0;
+  width: 100%;
 }
 .book-label span.book-num {
   font-variant: small-caps;
-  font-weight: normal;
+  font-weight: bold;
 }
-.book-label:hover {
+.book-label a {
+  color: #333;
+  padding: 10px 15px;
+  display: inline-block;
+  width: inherit;
+}
+.book-label a:hover {
+  text-decoration: none;
+}
+.work-label:hover {
   background-color: rgb(238, 238, 238);
-  background-color: rgba(238, 238, 238, 0.5);
+  background-color: rgba(238, 238, 238, 1);
   cursor: pointer;
 }
-.work-label span {
+.book-label:hover {
+  background-color: rgb(51, 122, 183);
+  background-color: rgba(51, 122, 183, 0.23);
+}
+.work-label span.author {
   font-style: italic;
   font-weight: normal;
+}
+.work-label > span.glyphicon {
+  font-size: 0.8em;
 }
 .tei-head {
   display: none;
@@ -121,7 +156,6 @@ footer {
 }
 
 /* list-group-horizontal: gist:d6401c926b4fb2442e15 */
-
 .list-group-horizontal .list-group-item {
   display: inline-block;
   cursor: pointer;

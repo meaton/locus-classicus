@@ -3,7 +3,7 @@ Works.attachSchema(Schemas.Work);
 
 if (Meteor.isServer) {
   Meteor.publish('works', function() {
-    return Works.find();
+    return Works.find({}, {sort: {author: 1}});
   });
 
   Meteor.publish('current-work-by-book', function(bookId) {

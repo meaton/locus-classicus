@@ -5,7 +5,7 @@
             <h3 class="chapter-title">{{title}}</h3>
             <div class="{{targetClass}}">
               {{{content}}}
-              {{#if desc }}<div class="attribution desc">{{{desc}}}</div>{{/if}}
+              {{> attribution attributionProps}}
             </div>
             <!--<div class="targetAlignment">Selection:
               <i>
